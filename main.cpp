@@ -2,97 +2,61 @@
 
 using namespace std;
 
-
-float multiplication (float f,float g){
-float t;
-t = f*g;
-return (t);
-}
 int main()
 {
+
+    int total;
+    int i = 0;
+    string Option, A, B, C, D;
     string Username;
     int Password;
-     string Option;
-     string A;
-     string B;
-     string C;
-     int n;
-     float AMOUNT;
     Username == "DAVIS UDO";
     Password == 12345;
-    cout << "WELCOME TO DAVE ONLINE PHONE MARKET" <<endl<<endl;
-    cout << "ENTER USERNAME: " << endl;
+    cout <<"WELCOME TO POST-UTME PORTAL"<<endl<<endl;
+    cout <<"ENTER YOUR USERNAME"<< endl;
    getline(cin,Username);
     cout <<endl;
-    cout << "ENTER PASSWORD: " << endl;
+    cout <<"ENTER YOUR PASSWORD"<< endl;
     cin>>Password;
-
-if (Username == "DAVIS UDO" && Password == 12345){
+        if (Username == "DAVIS UDO" && Password == 12345){
 
         cout<<"CORRECT LOGIN, REDIRECTING "<<endl<<endl;
-
+        cout <<"WELCOME "<<" TO POST-UTME PORTAL"<<endl<<endl;
+    }
+    else {
+        cout<<"INCORRECT LOGIN, RETRY "<<endl<<endl;
 }
-    else  {
-
-        cout<<"INCORRECT LOGIN, RETRY"<<endl;
-
-
 if (Username == "DAVIS UDO" && Password == 12345){
         cout<<"WELCOME "<<Username<<endl<<endl;
-        cout<<"WE HAVE:" <<endl<<endl;
-        cout<<"(A) IPHONES "<< endl<<"(B) SAMSUNGS "<< endl<<endl;
-    cout << "PLEASE SELECT AN OPTION: (A,B) BELOW "<<endl;
+        cout<<"BELOW ARE 4 SUBJECTS, WHICH DO YOU LIKE TO ATTEMPT FIRST?" <<endl<<endl;
+        cout<<"(A) ENGLISH "<< endl<<"(B) MATHEMATICS "<<endl<<"(C) PHYSICS "<<endl<<"(D) CHEMISTRY "<<endl<<endl;
+    cout << "PLEASE SELECT AN OPTION: (A,B,C,D) BELOW "<<endl;
     cin>> Option;
-    A = "IPHONE";
-    B = "SAMSUNG";
+    A = "ENGLISH";
+    B = "MATHEMATICS";
+    C = "PHYSICS";
+    D = "CHEMISTRY";
 
     if (Option == "A"){
-        cout << "You need an "<< A << endl<<endl;
-        cout<<"WE HAVE:" <<endl<<endl;
-        cout<<"(A) IPHONE X "<< endl<<"(B) IPHONE 13 PRO MAX "<< endl<<endl;
-        cout << "PLEASE SELECT AN OPTION: (A,B) BELOW "<<endl<<endl;
+        cout<<"BELOW ARE 2 QUESTIONS FROM ENGLISH LANGUAGE"<<endl;
+        cout<<"(A) A ______ is a name of a person, animal, place or thing?  "<<endl;
+        cout<<"(A) NOUN "<<"(B) PRONOUN "<<endl;
         cin>> Option;
-        if (Option == "A")
-        cout << "How many pieces of IPHONE X do you need " << endl<<endl;
-       cin>>n;
-       cout << "How want "<<n<<" Pieces of IPHONE X"<< endl<<endl;
-       AMOUNT = multiplication (150000,n);
-    cout << "YOU ARE TO PAY N"<<AMOUNT<< endl<<endl;
-    cout << "PROCEED TO PAYMENT"<<endl<<endl;
-
-        if (Option == "B")
-        cout << "How many pieces of IPHONE 13 PRO MAX do you need " << endl<<endl;
-       cin>>n;
-       cout << "How want "<<n<<" Pieces of IPHONE 13 PRO MAX"<< endl<<endl;
-       AMOUNT = multiplication (85000,n);
-    cout << "YOU ARE TO PAY N"<<AMOUNT<< endl<<endl;
-    cout << "PROCEED TO PAYMENT"<<endl<<endl;
-    }
-    if (Option == "B"){
-        cout << "You need an "<< B << endl<<endl;
-        cout<<"WE HAVE:" <<endl<<endl;
-        cout<<"(A) SAMSUNG GALAXY NOTE 20 "<< endl<<"(B) SAMSUNG GALAXY S20 ULTRA  "<< endl<<endl;
-        cout << "PLEASE SELECT AN OPTION: (A,B) BELOW "<<endl<<endl;
-        cin>> Option;
-
+        A = "NOUN";
+        B = "PRONOUN";
         if (Option == "A"){
-        cout << "How many pieces of SAMSUNG GALAXY NOTE 20 do you need " << endl<<endl;
-       cin>>n;
-       cout << "How want "<<n<<" Pieces of SAMSUNG GALAXY NOTE 20"<< endl<<endl;
-        AMOUNT = multiplication (350000,n);
-        cout << "YOU ARE TO PAY N"<<AMOUNT<< endl<<endl;
-        cout << "PROCEED TO PAYMENT"<<endl<<endl;
+            for (i = 0; i < score)
         }
-        else
-        cout << "How many pieces of SAMSUNG GALAXY S20 ULTRA do you need " << endl<<endl;
-       cin>>n;
-       cout << "How want "<<n<<" Pieces of SAMSUNG GALAXY S20 ULTRA"<< endl<<endl;
-        AMOUNT = multiplication (450000,n);
-        cout << "YOU ARE TO PAY N"<<AMOUNT<< endl<<endl;
-        cout << "PROCEED TO PAYMENT"<<endl<<endl;
-
     }
+
+
+
+
+
+
+
+
+
 }
     return 0;
-}
 }
