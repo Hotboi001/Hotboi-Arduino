@@ -1,85 +1,98 @@
 #include <iostream>
 
 using namespace std;
-#include <string>
 
+
+float multiplication (float f,float g){
+float t;
+t = f*g;
+return (t);
+}
 int main()
 {
-   int Age;
-   string name;
-    string Option;
- string A = "HEADACHE";
- string B = "BODY PAINS";
- string C = "SOUR THROAT";
-   cout << "WELCOME TO DAVIS CARE"<< endl;
-   cout << "Your mobile doctor app" << endl<<endl;
-    cout << "TYPE YOUR NAME" << endl;
-   getline(cin, name);
-    cout << "Welcome "<<name<< endl<<endl;
+    string Username;
+    int Password;
+     string Option;
+     string A;
+     string B;
+     string C;
+     int n;
+     float AMOUNT;
+    Username == "DAVIS UDO";
+    Password == 12345;
+    cout << "WELCOME TO DAVE ONLINE PHONE MARKET" <<endl<<endl;
+    cout << "ENTER USERNAME: " << endl;
+   getline(cin,Username);
+    cout <<endl;
+    cout << "ENTER PASSWORD: " << endl;
+    cin>>Password;
 
-    loop:
-    cout << "BELOW ARE SOME SYMPTOMS, What are yours? " << endl;
-    cout << "(A) HEADACHE "<< endl<<"(B) BODY PAINS "<< endl<<"(C) SOUR THROAT "<<endl<<endl;
-   cout << "PLEASE SELECT AN OPTION: (A,B,C) BELOW "<<endl;
+if (Username == "DAVIS UDO" && Password == 12345){
 
+        cout<<"CORRECT LOGIN, REDIRECTING "<<endl<<endl;
+
+}
+    else  {
+
+        cout<<"INCORRECT LOGIN, RETRY"<<endl;
+
+
+if (Username == "DAVIS UDO" && Password == 12345){
+        cout<<"WELCOME "<<Username<<endl<<endl;
+        cout<<"WE HAVE:" <<endl<<endl;
+        cout<<"(A) IPHONES "<< endl<<"(B) SAMSUNGS "<< endl<<endl;
+    cout << "PLEASE SELECT AN OPTION: (A,B) BELOW "<<endl;
     cin>> Option;
+    A = "IPHONE";
+    B = "SAMSUNG";
 
+    if (Option == "A"){
+        cout << "You need an "<< A << endl<<endl;
+        cout<<"WE HAVE:" <<endl<<endl;
+        cout<<"(A) IPHONE X "<< endl<<"(B) IPHONE 13 PRO MAX "<< endl<<endl;
+        cout << "PLEASE SELECT AN OPTION: (A,B) BELOW "<<endl<<endl;
+        cin>> Option;
+        if (Option == "A")
+        cout << "How many pieces of IPHONE X do you need " << endl<<endl;
+       cin>>n;
+       cout << "How want "<<n<<" Pieces of IPHONE X"<< endl<<endl;
+       AMOUNT = multiplication (150000,n);
+    cout << "YOU ARE TO PAY N"<<AMOUNT<< endl<<endl;
+    cout << "PROCEED TO PAYMENT"<<endl<<endl;
 
-   if (Option == "A"){
-        cout << "You have "<< A << endl;
-        cout << "How old are you? " << endl;
-        cin>> Age;
-        if (Age <= 18){
-             cout << "I RECOMMEND 1 TABLET OF PARACETAMOL AND 30MINS REST IMMEDIATELY" << endl<<endl;
-             cout <<"GO BACK TO THE OPTIONS"<<endl;
-                cin>> Option;
-                cout<<endl;}
-        else {
-            cout << "I RECOMMEND 2 TABLET OF PARACETAMOL AND 1HR REST IMMEDIATELY" << endl<<endl;
-            cout <<"TYPE (D) TO GO BACK TO THE OPTIONS"<<endl;
-                cin>> Option;
-                cout<<endl;
+        if (Option == "B")
+        cout << "How many pieces of IPHONE 13 PRO MAX do you need " << endl<<endl;
+       cin>>n;
+       cout << "How want "<<n<<" Pieces of IPHONE 13 PRO MAX"<< endl<<endl;
+       AMOUNT = multiplication (85000,n);
+    cout << "YOU ARE TO PAY N"<<AMOUNT<< endl<<endl;
+    cout << "PROCEED TO PAYMENT"<<endl<<endl;
+    }
+    if (Option == "B"){
+        cout << "You need an "<< B << endl<<endl;
+        cout<<"WE HAVE:" <<endl<<endl;
+        cout<<"(A) SAMSUNG GALAXY NOTE 20 "<< endl<<"(B) SAMSUNG GALAXY S20 ULTRA  "<< endl<<endl;
+        cout << "PLEASE SELECT AN OPTION: (A,B) BELOW "<<endl<<endl;
+        cin>> Option;
 
-}
-}
-
-
-        if (Option == "B"){
-        cout << "You have "<< B << endl<<endl;
-        cout << "How old are you? " << endl;
-        cin>> Age;
-        if (Age <= 18){
-             cout << "I RECOMMEND PAIN RELIEVER OF 250mg AND A GLASS OF WATER" << endl<<endl;
-              cout <<"TYPE (D) TO GO BACK TO THE OPTIONS"<<endl<<endl;
-                cin>> Option;
-                cout<<endl;}
-        else {
-            cout << "I RECOMMEND PAIN RELIEVER OF 500mg AND A GLASS OF WATER" << endl<<endl;
-             cout <<"TYPE (D) TO GO BACK TO THE OPTIONS"<<endl<<endl;
-                cin>> Option;
-                cout<<endl;
+        if (Option == "A"){
+        cout << "How many pieces of SAMSUNG GALAXY NOTE 20 do you need " << endl<<endl;
+       cin>>n;
+       cout << "How want "<<n<<" Pieces of SAMSUNG GALAXY NOTE 20"<< endl<<endl;
+        AMOUNT = multiplication (350000,n);
+        cout << "YOU ARE TO PAY N"<<AMOUNT<< endl<<endl;
+        cout << "PROCEED TO PAYMENT"<<endl<<endl;
         }
+        else
+        cout << "How many pieces of SAMSUNG GALAXY S20 ULTRA do you need " << endl<<endl;
+       cin>>n;
+       cout << "How want "<<n<<" Pieces of SAMSUNG GALAXY S20 ULTRA"<< endl<<endl;
+        AMOUNT = multiplication (450000,n);
+        cout << "YOU ARE TO PAY N"<<AMOUNT<< endl<<endl;
+        cout << "PROCEED TO PAYMENT"<<endl<<endl;
 
     }
-
-        if (Option == "C"){
-            cout << "You have "<< C << endl;
-            cout << "How old are you? " << endl;
-            cin>> Age;
-                if (Age <= 18){
-                    cout << "I RECOMMEND STREPSILS OF 250mg AND A 10MINS REST" << endl;
-                     cout <<"TYPE (D) TO GO BACK TO THE OPTIONS"<<endl;
-                cin>> Option;
-                cout<<endl;
-        }
-                else {
-                    cout << "I RECOMMEND STREPSILS OF 500mg AND A 30 MINS REST" << endl;
-                     cout <<"TYPE (D) TO GO BACK TO THE OPTIONS"<<endl;
-                cin>> Option;
-                cout<<endl;
-        }
-        }
-    if (Option == "D") goto loop;
-
+}
     return 0;
+}
 }
